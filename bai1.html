@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1">: điểm Vật lý
+<br>
+<input type="text" id="2">: điểm Hoá học
+<br>
+<input type="text" id="3">: điểm Sinh học
+<br>
+<button type="submit" onclick="tinhdiem();"> tính</button>
+<script>
+    function tinhdiem() {
+        let a = +document.getElementById('1').value;
+        let b = +document.getElementById('2').value;
+        let c = +document.getElementById('3').value;
+        let d = (a+b+c)/3;
+        // let e = d/3;
+        alert('điểm trung bình ='+d+'đ');
+    }
+</script>
+</body>
+</html>

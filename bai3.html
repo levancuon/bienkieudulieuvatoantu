@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>Tính diện tích hình tròn</h1>
+</head>
+
+<body>
+<input type="text" id="1">: bán kính <br>
+<button type="submit" onclick="tinhtheor();">tính diện tích</button>
+<br>
+<input type="text" id="2">: đường kính <br>
+<button type="submit" onclick="tinhtheod();">tính diện tích</button>
+<script>
+    function tinhtheor(){
+        let a = document.getElementById('1').value;
+        const pi = 3.14;
+        let b = pi*a*a;
+        alert(+b+" m2");
+    }
+    function tinhtheod(){
+        let c = document.getElementById('2').value;
+        const pi = 3.14;
+        let d = pi*(c/2)*(c/2);
+        alert(+d+" m2");
+    }
+
+
+
+</script>
+</body>
+</html>
